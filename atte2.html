@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+        <title>e-attendance</title>
+	</head>
+	<body>
+		<div>
+			<h1>E-ATTENDANCE PAGE</h1>
+			<form action="/e_attendance" method="post">
+            <!-- <label for="dept">DEPARTMENT:</label>
+            <select name="department" id="dept">
+                <option value="civil">CIVIL</option>
+                <option value="cse">COMPUTER SCIENCE</option>
+                <option value="ece">ECE</option>
+                <option value="eee">EEE</option>
+                <option value="mca">MCA</option>
+                <option value="mech">MECHANICAL</option>
+            </select>
+            <br>-->
+            <label for="sem">SEMESTER:</label>
+            <select name="sem" id="sem">
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+            </select>
+            <br>
+            <label for="sub_code">ENTER SUBJECT CODE:</label>
+            <input type="text" name="sub_code" id="sub_code" required>
+            <br>
+            <table border="5">
+                <tr><td>Register number</td><td>Name of students</td><td>PRESENT</td><td>ABSENT</td></tr>
+                <tr>
+                <td>
+                    <label>513121622001</label></td>
+                    <td>
+                    <label>BHUVANESH S L
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra1" value="P">
+                </td><td>
+                    <input type="radio" name="ra1" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622002</label></td>
+                    <td>
+                    <label>DHARSHINI K
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra2" value="P">
+                </td><td>
+                    <input type="radio" name="ra2" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622003</label></td>
+                    <td>
+                    <label>DHIVYA T
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra3" value="P">
+                </td><td>
+                    <input type="radio" name="ra3" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622004</label></td>
+                    <td>
+                    <label>DINESH KANNAN B
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra4" value="P">
+                </td><td>
+                    <input type="radio" name="ra4" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622005</label></td>
+                    <td>
+                    <label>GOKULA KANNAN S
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra5" value="P">
+                </td><td>
+                    <input type="radio" name="ra5" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622006</label></td>
+                    <td>
+                    <label>GOKULAKRISHNA S
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra6" value="P">
+                </td><td>
+                    <input type="radio" name="ra6" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622007</label></td>
+                    <td>
+                    <label>HARIHARA SUDHAN C
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra7" value="P">
+                </td><td>
+                    <input type="radio" name="ra7" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622008</label></td>
+                    <td>
+                    <label>HARIPRASANTH G
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra8" value="P">
+                </td><td>
+                    <input type="radio" name="ra8" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622009</label></td>
+                    <td>
+                    <label>HEMALATHA R
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra9" value="P">
+                </td><td>
+                    <input type="radio" name="ra9" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622010</label></td>
+                    <td>
+                    <label>KEERTHANA R
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra10" value="P">
+                </td><td>
+                    <input type="radio" name="ra10" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622011</label></td>
+                    <td>
+                    <label>KISHORE ANAND G
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra11" value="P">
+                </td><td>
+                    <input type="radio" name="ra11" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622012</label></td>
+                    <td>
+                    <label>MANIKANDAN P
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra12" value="P">
+                </td><td>
+                    <input type="radio" name="ra12" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622013</label></td>
+                    <td>
+                    <label>MUNIKRISHNAN R
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra13" value="P">
+                </td><td>
+                    <input type="radio" name="ra13" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622014</label></td>
+                    <td>
+                    <label>NEERMAL KUMAAR N
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra14" value="P">
+                </td><td>
+                    <input type="radio" name="ra14" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622015</label></td>
+                    <td>
+                    <label>NEVEDHA V N
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra15" value="P">
+                </td><td>
+                    <input type="radio" name="ra15" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622016</label></td>
+                    <td>
+                    <label>RADHA J
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra16" value="P">
+                </td><td>
+                    <input type="radio" name="ra16" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622017</label></td>
+                    <td>
+                    <label>RENUGA S P
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra17" value="P">
+                </td><td>
+                    <input type="radio" name="ra17" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622018</label></td>
+                    <td>
+                    <label>SAIKIRAN M
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra18" value="P">
+                </td><td>
+                    <input type="radio" name="ra18" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622019</label></td>
+                    <td>
+                    <label>SAKTHIVEL S
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra19" value="P">
+                </td><td>
+                    <input type="radio" name="ra19" value="A">
+                </td>
+            </tr><tr>
+                <td>
+                    <label>513121622020</label></td>
+                    <td>
+                    <label>SARULATHA D
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra20" value="P">
+                </td><td>
+                    <input type="radio" name="ra20" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622021</label></td>
+                    <td>
+                    <label>SAVITHRI A
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra21" value="P">
+                </td><td>
+                    <input type="radio" name="ra21" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622022</label></td>
+                    <td>
+                    <label>SELSIYA N
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra22" value="P">
+                </td><td>
+                    <input type="radio" name="ra22" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622023</label></td>
+                    <td>
+                    <label>SUDHAKAR G
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra23" value="P">
+                </td><td>
+                    <input type="radio" name="ra23" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622024</label></td>
+                    <td>
+                    <label>SUPRIYA V
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra24" value="P">
+                </td><td>
+                    <input type="radio" name="ra24" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622025</label></td>
+                    <td>
+                    <label>SWETHA N
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra25" value="P">
+                </td><td>
+                    <input type="radio" name="ra25" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622026</label></td>
+                    <td>
+                    <label>TAMILARASAN D
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra26" value="P">
+                </td><td>
+                    <input type="radio" name="ra26" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622027</label></td>
+                    <td>
+                    <label>UVANSHANKAR A
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra27" value="P">
+                </td><td>
+                    <input type="radio" name="ra27" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622028</label></td>
+                    <td>
+                    <label>VENKATESH R
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra28" value="P">
+                </td><td>
+                    <input type="radio" name="ra28" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622029</label></td>
+                    <td>
+                    <label>VIGNESHWARAN P
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra29" value="P">
+                </td><td>
+                    <input type="radio" name="ra29" value="A">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>513121622030</label></td>
+                    <td>
+                    <label>VIJAY KRISHNAN S
+                    </label>
+                </td>
+                <td>
+                    <input type="radio" name="ra30" value="P">
+                </td><td>
+                    <input type="radio" name="ra30" value="A">
+                </td>
+            </tr>
+                     </table>
+				<input type="submit" value="Freeze">
+			</form>
+		</div>
+	</body>
+</html>
